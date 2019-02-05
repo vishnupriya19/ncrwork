@@ -115,6 +115,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="A2_pg1_BinDec.cpp" />
+    <ClCompile Include="A2_pg3_Fact.cpp" />
+    <ClCompile Include="A2_pg4_Primes.cpp" />
+    <ClCompile Include="A2_pg5_Reverse.cpp" />
+    <ClCompile Include="pg10_Sum.cpp" />
+    <ClCompile Include="pg11_Interest.cpp" />
+    <ClCompile Include="pg12_Rotate.cpp" />
+    <ClCompile Include="pg13_Invert.cpp" />
+    <ClCompile Include="pg14_BinHex.cpp" />
+    <ClCompile Include="pg1_Add.cpp" />
+    <ClCompile Include="pg1_Main.cpp" />
+    <ClCompile Include="pg3_Bits.cpp" />
+    <ClCompile Include="pg4_Armstrong.cpp" />
+    <ClCompile Include="pg5_Binary.cpp" />
+    <ClCompile Include="pg6_Palindrom.cpp" />
+    <ClCompile Include="pg7_Integers.cpp" />
+    <ClCompile Include="pg8_Salary.cpp" />
+    <ClCompile Include="pg9_Pattern.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
