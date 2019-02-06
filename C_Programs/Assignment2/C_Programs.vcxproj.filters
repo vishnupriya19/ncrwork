@@ -72,5 +72,14 @@
     <ClCompile Include="A2_pg1_BinDec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="A2_pg2_HexBin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="A3_pg4_Hex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="A3_pg1_SubArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
