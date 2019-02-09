@@ -18,5 +18,11 @@
     <ClCompile Include="pg2_Count.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pg1_Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pg1_Add.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -5,7 +5,7 @@ int j;
 int* HexToBin(char h[])
 {
 	int i;
-	int *a = (int*)malloc(sizeof(int) * 100);
+	int *a = (int*)malloc(sizeof(int) * 35);
 	char t;
 	for (i = 0; h[i] != '\0'; i=i+1)
 	{
@@ -36,7 +36,7 @@ int* HexToBin(char h[])
 int* compliment(int a[])
 {
 	int i;
-	int *b = (int*)malloc(sizeof(int) * 100);
+	int *b = (int*)malloc(sizeof(int) * 35);
 	for (i = 0; i < j; i++)
 	{
 		if (a[i] == 0)
@@ -63,7 +63,7 @@ char* BinToHex(int b[])
 int* bitShift(int a[])
 {
 	int i,d,n;
-	int *b = (int*)malloc(sizeof(int) * 100);
+	int *b = (int*)malloc(sizeof(int) * 35);
 	printf("enter 1.right shift 2.left shift\n");
 	scanf("%d", &d);
 	printf("enter number of bits you want to shift\n");
@@ -98,6 +98,7 @@ int* maskOp(int a[])
 	scanf("%s", h);
 	pt1 = HexToBin(h);
 	printf("\n");
+	printf("%d\n", j);
 	for (i = 0; i < j; i++)
 		printf("%d", *(pt1 + i));
 	printf("\n");
@@ -123,33 +124,46 @@ int* maskOp(int a[])
 }
 int main()
 {
-	char h[10],*s1,*s2,*s3;
-	int *a,i,*b,*c,*d;
+	char h[10],*s1,*s2,*s3,h1[10];
+	int *a, i, *b, *c, *d, *pt1;
+	int choice;
+	printf("enter choice\n");
+	scanf("%d", &choice);
+	//printf("%d\n", choice);
 	printf("enter a hexadecimal value");
 	scanf("%s", h);
 	a = HexToBin(h);
-	for(i=0;i<j;i++)
-		printf("%d",*(a+i));
-	printf("\n");
-	b = compliment(a);
 	for (i = 0; i < j; i++)
-		printf("%d", *(b + i));
+		printf("%d", *(a + i));
 	printf("\n");
-	s1 = BinToHex(b);
-	for (i = 0; s1[i] != '\0'; i++)
-		printf("%c", s1[i]);
-	printf("\n");
-	c = bitShift(a);
-	for (i = 0; i < j; i++)
-		printf("%d", *(c + i));
-	printf("\n");
-	s2 = BinToHex(c);
-	for (i = 0; s1[i] != '\0'; i++)
-		printf("%c", s2[i]);
-	d = maskOp(a);
-	s3 = BinToHex(d);
-	for (i = 0; s1[i] != '\0'; i++)
-		printf("%c", s3[i]);
-	printf("\n");
+	if (choice == 1)
+	{
+		b = compliment(a);
+		for (i = 0; i < j; i++)
+			printf("%d", *(b + i));
+		printf("\n");
+		s1 = BinToHex(b);
+		for (i = 0; s1[i] != '\0'; i++)
+			printf("%c", s1[i]);
+		printf("\n");
+	}
+	else if(choice==2)
+	{
+		c = bitShift(a);
+		for (i = 0; i < j; i++)
+			printf("%d", *(c + i));
+		printf("\n");
+		s2 = BinToHex(c);
+		for (i = 0; s1[i] != '\0'; i++)
+			printf("%c", s2[i]);
+	}
+	else if(choice==3)
+	{
+		d = maskOp(a);
+		s3 = BinToHex(d);
+		for (i = 0; s1[i] != '\0'; i++)
+			printf("%c", s3[i]);
+		printf("\n");
+	}	
 	return 0;
 }

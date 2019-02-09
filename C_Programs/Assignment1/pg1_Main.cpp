@@ -1,5 +1,6 @@
 #include<stdio.h>
-#include "pg1_Add.cpp"
+//#include "pg1_Add.cpp"
+int res;
 int main()
 {
 	int a, b;

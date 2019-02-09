@@ -1,4 +1,6 @@
+extern int res;
 int add(int a, int b)
 {
-	return a + b;
+	res =  a + b;
+	return res;
 }
