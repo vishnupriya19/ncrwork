@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="pg13_Invert.cpp" />
     <ClCompile Include="pg1_Add.cpp" />
     <ClCompile Include="pg1_Main.cpp" />
     <ClCompile Include="pg2_Count.cpp" />

@@ -115,6 +115,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="A5_pg10_Files3.cpp" />
+    <ClCompile Include="A5_pg1_time.cpp" />
+    <ClCompile Include="A5_pg2_sizes.cpp" />
+    <ClCompile Include="A5_pg3_EnumEx.cpp" />
+    <ClCompile Include="A5_pg4.cpp" />
+    <ClCompile Include="A5_pg5_DatesDiff.cpp" />
+    <ClCompile Include="A5_pg6_Files.cpp" />
+    <ClCompile Include="A5_pg7_FileStore.cpp" />
+    <ClCompile Include="A5_pg8_Preprocessors.cpp" />
+    <ClCompile Include="A5_pg9_Files2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

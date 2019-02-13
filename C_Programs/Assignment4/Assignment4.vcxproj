@@ -121,10 +121,9 @@
     <ClCompile Include="A4_pg13_Expand.cpp" />
     <ClCompile Include="A4_pg14_Rotations.cpp" />
     <ClCompile Include="A4_pg15_StrFunctions.cpp" />
-    <ClCompile Include="A4_pg4_Counting.cpp" />
+    <ClCompile Include="A4_pg3_Counting.cpp" />
     <ClCompile Include="A4_pg4_Replac.cpp" />
     <ClCompile Include="A4_pg5_CaseConvertion.cpp" />
-    <ClCompile Include="A4_pg5_Replace.cpp" />
     <ClCompile Include="A4_pg6_Reverse.cpp" />
     <ClCompile Include="A4_pg7_Sort.cpp" />
     <ClCompile Include="A4_pg8_DmaEx.cpp" />

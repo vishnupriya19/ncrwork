@@ -15,12 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="A4_pg4_Counting.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="A4_pg5_Replace.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="A4_pg4_Replac.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -55,6 +49,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="A4_pg11_strtok.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="A4_pg3_Counting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

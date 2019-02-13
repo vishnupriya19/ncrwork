@@ -24,5 +24,8 @@
     <ClCompile Include="pg1_Add.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pg13_Invert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
