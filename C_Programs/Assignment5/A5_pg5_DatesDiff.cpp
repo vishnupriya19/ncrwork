@@ -38,7 +38,7 @@ int calculateDays3(struct Date d1,struct Date d2)
 		days = days + 31 - d1.date;
 	else
 		days = days + 30 - d1.date;
-	days = days + d2.date - 1;
+	days = days + d2; .date - 1;
 	for (i = d1.month + 1; i < d2.month; i++)
 		if (i == 1 || i == 3 || i == 5 || i == 7 || i == 8 || i == 10 || i == 12)
 			days = days + 31;

@@ -11,7 +11,7 @@ int main()
 		#undef MAX
 		#define MAX 99;
 	#else
-		printf("%d", MAX);
+		printf("%d", MAX) ;
 	#endif
 	return 0;
 }
