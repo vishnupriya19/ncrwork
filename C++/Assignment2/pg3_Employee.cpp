@@ -12,7 +12,10 @@ public:
 	{
 		empno = eno;
 		if (s != NULL)
+		{
 			name = new char[(strlen(s)) + 1];
+			strcpy(name, s);
+		}
 		salary = sal;
 	}
 	void setData(int e, char *s, int sal)
