@@ -118,12 +118,14 @@
     <ClCompile Include="BalancedParanth.cpp" />
     <ClCompile Include="BubbleSort.cpp" />
     <ClCompile Include="CircularQueue.cpp" />
+    <ClCompile Include="Dequeue.cpp" />
     <ClCompile Include="DoubleLL.cpp" />
     <ClCompile Include="InfixToPost.cpp" />
     <ClCompile Include="InfixToPrefix.cpp" />
     <ClCompile Include="InsertionSort.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="MergeSort.cpp" />
+    <ClCompile Include="Merging.cpp" />
     <ClCompile Include="PolynomialAdd.cpp" />
     <ClCompile Include="PostfixEvaluate.cpp" />
     <ClCompile Include="PostfixEvaluate2.cpp" />
