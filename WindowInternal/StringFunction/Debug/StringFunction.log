@@ -1,0 +1,3 @@
+﻿  Source.cpp
+e:\visual studio\priya\ncrwork\windowinternal\stringfunction\source.cpp(12): warning C4101: 'res': unreferenced local variable
+  StringFunction.vcxproj -> E:\visual studio\priya\ncrwork\WindowInternal\Debug\StringFunction.exe

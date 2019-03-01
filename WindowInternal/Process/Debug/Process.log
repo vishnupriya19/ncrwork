@@ -1,0 +1,6 @@
+﻿  Process.cpp
+e:\visual studio\priya\ncrwork\windowinternal\process\process.cpp(39): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'HANDLE'
+e:\visual studio\priya\ncrwork\windowinternal\process\process.cpp(41): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'HANDLE'
+e:\visual studio\priya\ncrwork\windowinternal\process\process.cpp(67): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'HANDLE'
+e:\visual studio\priya\ncrwork\windowinternal\process\process.cpp(69): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'HANDLE'
+  Process.vcxproj -> E:\visual studio\priya\ncrwork\WindowInternal\Debug\Process.exe

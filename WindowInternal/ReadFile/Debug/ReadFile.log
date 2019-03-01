@@ -1,0 +1,7 @@
+﻿  ReadFile.cpp
+e:\visual studio\priya\ncrwork\windowinternal\readfile\readfile.cpp(32): warning C4477: 'wprintf' : format string '%S' requires an argument of type 'char *', but variadic argument 2 has type 'TCHAR *'
+  e:\visual studio\priya\ncrwork\windowinternal\readfile\readfile.cpp(32): note: consider using '%lS' in the format string
+  e:\visual studio\priya\ncrwork\windowinternal\readfile\readfile.cpp(32): note: consider using '%llS' in the format string
+  e:\visual studio\priya\ncrwork\windowinternal\readfile\readfile.cpp(32): note: consider using '%LS' in the format string
+  e:\visual studio\priya\ncrwork\windowinternal\readfile\readfile.cpp(32): note: consider using '%wS' in the format string
+  ReadFile.vcxproj -> E:\visual studio\priya\ncrwork\WindowInternal\Debug\ReadFile.exe
