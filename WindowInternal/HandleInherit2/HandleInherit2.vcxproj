@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{C64428BD-D178-47E4-97E8-2D013D58057B}</ProjectGuid>
+    <ProjectGuid>{71DE39B7-95D3-48C8-A415-46F66F211627}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>HandleInherit2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
@@ -144,6 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="HandleInherit2.cpp" />
+    <ClCompile Include="Hi.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,2 +1,4 @@
-﻿  NamingObject.cpp
-  NamingObject.vcxproj -> E:\visual studio\priya\ncrwork\WindowInternal\Debug\NamingObject.exe
+﻿E:\visual studio\vs\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (NamingObject.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  NamingObject.cpp
+e:\visual studio\priya\ncrwork\windowinternal\namingobject\namingobject.cpp(18): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'HANDLE'
+  NamingObject.vcxproj -> E:\visual studio\priya\ncrwork\WindowInternal\Debug\pg8_NamingObject.exe

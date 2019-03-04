@@ -1,2 +1,3 @@
-﻿  Thread.cpp
-  Thread.vcxproj -> E:\visual studio\priya\ncrwork\WindowInternal\Debug\Thread.exe
+﻿E:\visual studio\vs\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Thread.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Thread.cpp
+  Thread.vcxproj -> E:\visual studio\priya\ncrwork\WindowInternal\Debug\pg12_Thread.exe

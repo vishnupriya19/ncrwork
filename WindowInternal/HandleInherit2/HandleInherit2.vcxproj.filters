@@ -18,5 +18,8 @@
     <ClCompile Include="HandleInherit2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Hi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

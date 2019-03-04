@@ -1,0 +1,7 @@
+﻿  add.cpp
+  div.cpp
+  mul.cpp
+  sub.cpp
+  Generating Code...
+     Creating library E:\visual studio\priya\ncrwork\WindowInternal\Debug\MyLib.lib and object E:\visual studio\priya\ncrwork\WindowInternal\Debug\MyLib.exp
+  MyLib.vcxproj -> E:\visual studio\priya\ncrwork\WindowInternal\Debug\MyLib.dll

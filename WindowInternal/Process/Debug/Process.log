@@ -1,6 +1,5 @@
-﻿  Process.cpp
+﻿E:\visual studio\vs\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Process.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Process.cpp
 e:\visual studio\priya\ncrwork\windowinternal\process\process.cpp(39): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'HANDLE'
 e:\visual studio\priya\ncrwork\windowinternal\process\process.cpp(41): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'HANDLE'
-e:\visual studio\priya\ncrwork\windowinternal\process\process.cpp(67): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'HANDLE'
-e:\visual studio\priya\ncrwork\windowinternal\process\process.cpp(69): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'HANDLE'
-  Process.vcxproj -> E:\visual studio\priya\ncrwork\WindowInternal\Debug\Process.exe
+  Process.vcxproj -> E:\visual studio\priya\ncrwork\WindowInternal\Debug\pg7_9_Process.exe

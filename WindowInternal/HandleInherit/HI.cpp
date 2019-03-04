@@ -7,22 +7,26 @@ using namespace std;
 #define BUFFERSIZE 100
 int main(int argc, CHAR* argv[])
 {
-	cout << "Hello ";
+	//cout << "Hello ";
 	DWORD nbr;
 	TCHAR buff[BUFFERSIZE];
-	ZeroMemory(buff, sizeof(buff));
+	ZeroMemory(buff, BUFFERSIZE);
 	int i = atoi(argv[0]);
 	HANDLE hFile=(HANDLE)i;
-	//_tprintf(_T("Handle value in HI = %S\n"), argv[0]);
+	_tprintf(_T("Handle value in HI = %s\n"), argv[0]);
 	printf("Handle value in HI = %d\n", hFile);
+	//HANDLE hFile1;
+	
 	BOOL ret = ReadFile(hFile, buff, BUFFERSIZE, &nbr, NULL);
-	if (ret == 0)
+	if (ret==FALSE)
 	{
 		_tprintf(_T("Cant read file Error %d\n"), GetLastError());
 		getchar();
 		return -1;
 	}
-	_tprintf(_T("Text in %S"),buff);
+	cout << nbr << endl;
+	_tprintf(_T("Text is %s"), buff);
+	//CloseHandle(hFile);
 	CloseHandle(hFile);
 	getchar();
 	return 0;

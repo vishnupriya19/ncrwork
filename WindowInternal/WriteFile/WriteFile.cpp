@@ -20,7 +20,7 @@ int main(int argc, TCHAR *argv[])
 	}
 	_tprintf(_T("File created successfully : %s\n"), fileName);
 	DWORD nbr;
-	bool ret = WriteFile(hFile, buff, BUFFERSIZE, &nbr, NULL);
+	BOOL ret = WriteFile(hFile, buff, BUFFERSIZE, &nbr, NULL);
 	if (ret == 0)
 	{
 		_tprintf(_T("Cant read file Error %d\n"), GetLastError());

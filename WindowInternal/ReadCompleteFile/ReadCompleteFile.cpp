@@ -14,8 +14,15 @@ int _tmain(int argc, TCHAR *argv[])
 	//return 0;
 	LPCTSTR fileName = TEXT("welcome.txt");
 
-	hFile = CreateFile(fileName, GENERIC_READ, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
-	if (hFile == INVALID_HANDLE_VALUE)
+	hFile = CreateFile(fileName,//name of the file to be opened
+					GENERIC_READ,//desired access
+					0, //shared mode
+					NULL,//SecurityAttribues
+					OPEN_EXISTING,//action to take on a file or device that exists or don't exist
+					FILE_ATTRIBUTE_NORMAL, //file attribues and flags
+					NULL//handle to GENERIC-READ file that supplies attribues to file
+					);
+	if (hFile == INVALID_HANDLE_VALUE) //failure
 	{
 		_tprintf(_T("File open error : %d\n"), GetLastError());
 		getchar();

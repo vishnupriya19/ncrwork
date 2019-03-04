@@ -20,16 +20,16 @@ int main()
 	wcscpy_s(lp,_countof(L"notepad"), L"notepad");
 	//wcout << lp << endl;
 	if (!CreateProcess(
-		NULL,
-		lp,
-		NULL,
-		NULL,
-		FALSE,
-		0,
-		NULL,
-		NULL,
-		&si,
-		&pi
+		NULL,//Application name
+		lp,//Command Line
+		NULL,//Process Atrributes
+		NULL,//Thread Attributes
+		FALSE,//Handle inheritance
+		0,//Priority class
+		NULL,//Pointer to environment block of new process
+		NULL,//Full path to current directory of process
+		&si,//Pointer to STARTUPINFO structure
+		&pi//POinter to PROCESSINFORMATION structure
 	))
 	{
 		printf("Create process error %d\n", GetLastError());
@@ -64,10 +64,12 @@ int main()
 		getchar();
 		return 0;
 	}
-	printf("Handle of process %ld\n", pi.hProcess);
-	printf(" Process id process %ld\n", pi.dwProcessId);
-	printf("Handle of thread %ld\n", pi.hThread);
-	printf(" Process id thread %ld\n", pi.dwThreadId);
+	printf("Id of current process %ld\n", GetCurrentProcessId());
+	printf("Id of current thread %ld\n", GetCurrentThreadId());
+	printf("Id of process %ld\n", GetProcessId(pi.hProcess));
+	printf("Id of thread %ld\n", GetThreadId(pi.hThread));
+	printf("Process Id of Thread %ld", GetProcessIdOfThread(pi.hThread));
+
 	delete lp;
 	return 0;
 }

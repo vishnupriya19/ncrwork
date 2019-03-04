@@ -24,7 +24,7 @@ void DumpEnvString(PTSTR pEnvBlock[])
 }
 int main(int argc, TCHAR *argv[], TCHAR *env[])
 {
-	DumpEnvString(env);
+	//DumpEnvString(env);
 	TCHAR enV[] = TEXT("%SystemRoot%");
 	TCHAR buff[MAX_PATH];
 	DWORD ret;
