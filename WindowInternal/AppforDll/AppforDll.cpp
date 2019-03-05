@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<Windows.h>
-#include "MyLib.h"
+#include "MyDll1.h"
 
 typedef int(*add1)(int, int);
 typedef int(*sub1)(int, int);
@@ -15,7 +15,7 @@ int main()
 	int sum, sub, mul, div;
 	MYPROC ADD, SUB, MUL, DIV;
 	hdl = LoadLibraryEx(
-		TEXT("E:\\visual studio\\priya\\ncrwork\\WindowInternal\\Debug\\MyLib.dll"),
+		TEXT("E:\\visual studio\\priya\\ncrwork\\WindowInternal\\Debug\\MyDll1.dll"),
 		NULL,
 		NULL
 	);
@@ -64,5 +64,6 @@ int main()
 	}
 	div = DIV(20, 10);
 	printf("Division of 20 and 10 = %d\n", div);
+	FreeLibrary(hdl);
 	return 0;
 }

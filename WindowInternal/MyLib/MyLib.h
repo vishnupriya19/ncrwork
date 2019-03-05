@@ -8,4 +8,4 @@ MYLIBAPI int add(int a, int b);
 MYLIBAPI int sub(int a, int b);
 MYLIBAPI int mul(int a, int b);
 MYLIBAPI int division(int a, int b);
-MYLIBAPI BOOL WINAPI DllMain(HANDLE hand,DWORD msg,LPVOID res);
+//MYLIBAPI BOOL WINAPI DllMain(HANDLE hand,DWORD msg,LPVOID res);
