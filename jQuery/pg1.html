@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<script src='jquery-3.3.1.js'></script>
+<html>
+<head>
+<title>jQuery</title> 
+<style>
+    .add{
+        float: left;
+        width:50%;
+    }    
+    .add1{
+         float: left;
+         width:50%;
+    }
+    
+</style>
+</head>
+    <body>
+        <script>
+        
+        $(document).ready(function(){
+            
+          $("#myBox").change(function(){
+              if($(this).prop("checked") == true)
+                {
+              $("#hno_p").val($("#hno").val());
+              $("#street_p").val($("#street").val());
+              $("#landmark_p").val($("#landmark").val());
+              $("#mandal_p").val($("#mandal").val());
+              $("#state_p").val($("#state").val());
+              $("#pincode_p").val($("#pincode").val());
+                }
+              else
+              {
+              $("#hno_p").val(" ");
+              $("#street_p").val(" ");
+              $("#landmark_p").val(" ");
+              $("#mandal_p").val(" ");
+              $("#state_p").val(" ");
+              $("#pincode_p").val(" ");
+              }
+          });  
+         $("#myRadio").click(function(){
+             //alert($("#mySpan").html());
+             if(($("#mySpan").text())=="Hide")
+                $("#mySpan").text("Show");
+             else
+                $("#mySpan").text("Hide");
+             $("#myRadio").prop("checked",false);
+             $("#main").toggle();
+         })
+        });
+            
+        </script>
+        <h1>Address</h1>
+        <input type="radio" id="myRadio"><span id="mySpan">Hide</span><br><br>
+        <div id="main">
+        <div class="add">
+        <h2>Current Address</h2>
+        House No    :<br> <input id='hno' type='text'><br><br>
+        Street Name :<br> <input id='street' type='text'><br><br>
+        Land Mark   :<br> <input id='landmark' type='text'><br><br>
+        Mandal      :<br> <input id='mandal' type='text'><br><br>
+        State       :<br> 
+        <select id="state">
+        <option val="telangana">Telangana</option>
+        <option val="andhra">Andhra</option>
+        </select><br><br>
+        Pincode     :<br> <input id='pincode' type='text'><br><br>
+        </div>
+        <div class="add1">
+        <h2>Permanent Address</h2>
+        <input id="myBox" type='checkbox'>Same as current address<br><br>
+        House No    :<br> <input id='hno_p' type='text'><br><br>
+        Street Name :<br> <input id='street_p' type='text'><br><br>
+        Land Mark   :<br> <input id='landmark_p' type='text'><br><br>
+        Mandal      :<br> <input id='mandal_p' type='text'><br><br>
+        State       :<br>
+        <select id="state_p">
+        <option val="telangana">Telangana</option>
+        <option val="andhra">Andhra</option>
+        </select><br><br>
+        Pincode     :<br> <input id='pincode_p' type='text'><br><br>
+        </div>
+        </div>
+    </body>
+</html>
