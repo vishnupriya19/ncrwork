@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<script src='jquery-3.3.1.js'></script>
+<html>
+<head>
+<title>Registration</title>  
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+           $("#dob").change(function(){
+               var dob=new Date($("#dob").val());
+               var now = new Date();
+               var age = now.getFullYear()-dob.getFullYear();
+               if(now.getMonth()>dob.getMonth())
+                   age--;
+               if(now.getMonth()==dob.getMonth() && now.getDate()<dob.getDate())
+                   age--;
+               $("#age").val(age);
+           });
+            
+        });
+    </script>
+ <h1>Registration Form</h1> 
+Name&nbsp;&nbsp;&nbsp;
+<input type="text" id='name'><br><br>
+Photo&nbsp;&nbsp;&nbsp;
+<input type="file" id="photo" accept="image/jpeg,image/x-png"><br><br>
+DOB&nbsp;&nbsp;&nbsp;
+<input type="date" id="dob"><br><br>
+Age&nbsp;&nbsp;&nbsp;&nbsp;
+<input type='text' id='age'><br><br>
+</body>
+</html>
