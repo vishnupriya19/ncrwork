@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Welcome</title>
+    </head>
+    <body>
+        <h1>Adding more than 1 event listeners in JavaScript</h1>
+        <form action="https://www.google.com" method="get">
+            UserName<input id="name" type="text" placeholder="enter your name" name="username"><br><br>
+            Password<input id="pwd" type="password" placeholder="enter password" name="password"><br><br>
+            <input id="sub" type="submit">
+        </form>
+        <script>
+            document.getElementById("sub").addEventListener("click",CheckInfo);
+            document.getElementById("sub").addEventListener("click",CheckInfo2)
+            function CheckInfo()
+            {
+                alert("Hai");
+            }
+            function CheckInfo2()
+            {
+                alert("Hello");
+            }
+        </script>
+    </body>
+</html>

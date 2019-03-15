@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML DOM JS</title>
+    <script>
+        function onLoad()
+        {
+            var now=new Date().getTime();
+            var page_load_time = now-performance.timing.navigationStart;
+            alert(page_load_time);
+            console.log(page_load_time);
+        }
+    </script>
+</head>
+<body onload="onLoad()">
+    <h1>This program uses java script to change text background color and background image of html using methods of javascript.</h1>
+    <p id="para">Hello Good Morning, Hava a nice day</p>
+    <script type="text/javascript">
+        document.getElementById("para").style.color="green";
+        document.getElementById("para").style.fontSize='30px';
+        document.body.style.backgroundImage='url("nature3.jpg")';
+        document.body.style.backgroundRepeat='no-repeat';
+        document.body.style.backgroundSize='100% 700px';
+    </script>
+</body>
+</html>

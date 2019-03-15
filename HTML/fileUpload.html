@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>FileUpload Example</title>
+    </head>
+    <body>
+        <h1>Uploading a file and knowing its size</h1>
+        <input type="file" id="myFile"><br><br>
+        <button type="button" id="myBtn">Upload file</button>
+        <script>
+            document.getElementById("myBtn").addEventListener("click",fileUpload);
+            function fileUpload()
+            {
+                var file=document.getElementById("myFile");
+                if(typeof(file.files)!="undefined")
+                    {
+                        var size=parseFloat(file.files[0].size/1024).toFixed(2);
+                        alert(size + "KB");
+                    }
+                else
+                    {
+                        alert("This browser don't support HTML5");
+                    }
+            }
+        </script>
+    </body>
+</html>

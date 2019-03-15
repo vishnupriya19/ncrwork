@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>cssExample</title>
+    <style>
+        html
+        {
+            background-color: lightgray;
+        }
+        body{
+            margin: 0px;
+        }
+        header
+        {
+           
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .fixed-bar
+        {
+            height: 70px;
+        }
+        #page-title
+        {
+            background-color:#521751;
+            font-size: 30px;
+            padding: 10px;
+            margin: 0px;
+            position: fixed;
+            width: 100%;
+            height: 40px;
+            text-align: center;
+        }  
+        .navigation
+        {
+            text-align: center;
+        }
+        .navigation li
+        {
+            display: inline-block;
+            width: 70px;
+            background-color: darkgrey;
+        }
+        .nature-text
+        {
+            display: flex;
+            padding: 0px;
+        }
+        .nature-text p
+        {
+            display:inline-block;
+            width:50%;
+            background-color: #521751;
+            margin:0px;
+            text-align: center;
+            color: white;
+        }
+        .nature-img
+        {
+            display: flex;
+            margin:0px;
+        }
+        .nature-img img
+        {
+            display: inline-block;
+            width: 50%;
+            height: 200px;
+            margin:0px;
+        }
+        #after-main
+        {
+            background-color: #521751;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            position: relative;
+            bottom: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <header class="fixed-bar">
+        <h1 id="page-title"> Vishnu Priya</h1>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li>Home</li>
+                <li><a href="www.google.com">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="nature-text">
+            <p>nature-1</p>
+            <p>nature-2</p>
+            </div>
+            <div class="nature-img">
+                <img src="nature1.jpg">
+                <img src="nature2.jpg">
+            </div>
+        </main>
+        <p id="after-main">Do you like my page?</p>
+    </body>
+    <script>
+    console.log(document.getElementById("page-title"));
+    var li=document.getElementsByClassName("navigation");
+        console.log(li);
+        console.log(li[0]);
+    </script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript adding Elements()</h2>
+
+<p>This example uses the addEventListener() method to execute a function when a user clicks on a button.</p>
+
+<button id="btn">New Registration</button>
+
+<script>
+document.getElementById("btn").addEventListener("click", myFunction);
+
+function myFunction() {
+  
+  var vInput = document.createElement("input");
+    vInput.type='text';
+    document.body.appendChild(vInput);
+}
+</script>
+
+</body>
+</html>
